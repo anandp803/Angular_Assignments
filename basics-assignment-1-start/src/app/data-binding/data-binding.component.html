@@ -1,0 +1,5 @@
+
+<input type="text" class="Forn-Input" [(ngModel)]="Username" (event)="OnInputfieldUpdated($event)">
+<p>{{Username}}</p>
+<button class="btn-for-input btn-primary" [disabled]="Username.length>0?false:true" (click)="OnUpdateInputvalue()">click</button>
+    
